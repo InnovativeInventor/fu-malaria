@@ -4,7 +4,7 @@ MAINTAINER InnovativeInventor
 
 WORKDIR /usr/src/app
 
-RUN apt-get update && apt-get upgrade -y && apt-get install git nginx -y
+RUN apt-get update && apt-get upgrade -y && apt-get install git -y
 RUN git clone https://github.com/InnovativeInventor/fu-malaria /usr/src/app
 RUN pip3 install gunicorn flask numpy opencv-python
 
